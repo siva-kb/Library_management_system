@@ -50,3 +50,14 @@ Contact:
 For any questions or support, please reach out to sivamuruganb637@gmail.com
 
 ![Homepage](https://github.com/siva-kb/Library_management_system/assets/163427874/47b5ed06-5ac2-4676-b9c6-b6e6d8f9d70b)
+
+![Admin login page](https://github.com/siva-kb/Library_management_system/assets/163427874/8b2f441f-fa64-41d4-a69c-3e5fb0f32ea5)
+
+![Add new books](https://github.com/siva-kb/Library_management_system/assets/163427874/3f5f767e-9ae8-490d-87c8-be052d31d7b2)
+
+![book list](https://github.com/siva-kb/Library_management_system/assets/163427874/055b84b5-e605-40db-9a53-19b5bff8969e)
+
+![Issue book](https://github.com/siva-kb/Library_management_system/assets/163427874/64e741b7-c673-4700-ad74-e83e6f4665e0)
+
+![borrow details](https://github.com/siva-kb/Library_management_system/assets/163427874/516a2fb8-9400-4d92-acfc-7a65a817d83e)
+
