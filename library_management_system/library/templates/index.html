@@ -1,0 +1,42 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %} Library Management System {% endblock %}
+{% block css %}
+<style>
+    .with-background-image {
+        background-image: url('{% static "background.webp" %}');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+{% endblock %}
+{% block body %}
+<div class="p-4 bg-light with-background-image">
+    <div class="container-fluid py-3">
+      <h1 class="display-5 fw-bold" style="color: #030e12; text-align: center;">Library Management System</h1>
+        <br></br>
+        <p class="display-7 fw-bold" style="color: #030e12; font-family: Arial, sans-serif; text-align: center;">
+    We are dedicated to fostering a love for reading and providing access <br> to a wealth of knowledge. Our library management system is designed
+    to streamline the borrowing process and enhance the overall experience for our patrons.
+</p>
+
+
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{% static 'admin.png' %}" width="50%" height="50%" alt=""><br><br>
+                <a class="btn btn-outline-primary btn-lg" style="text-align:center" href="/admin_login/">Admin</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static 'book123.webp' %}" width="50%" height="50%" alt=""><br><br>
+                <a class="-outline-primary btn-lg" href="/student_login/"></a>
+            </div>
+            <div><p class="display-7 fw-bold" style="color: #030e12; text-align: center;">Whether you're a lifelong reader or just starting to explore the world of literature, we invite you to embark on a reading journey with us.
+            Discover new authors, explore different perspectives, and enrich your mind with the power of words.</p></div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

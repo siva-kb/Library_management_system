@@ -1,0 +1,110 @@
+{% extends 'admin_navbar.html' %}
+{% load static %}
+{% block title %} Library Management System {% endblock %}
+{% block css %}
+<style>
+    body {
+        background-color: #5bccf6;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f8f9fa;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+</style>
+{% endblock %}
+{% block body %}
+</style>
+
+<div class="container">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter Name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" name="title" placeholder="Enter Title" required>
+        </div>
+
+        <div class="form-group">
+            <label>Book ID</label>
+            <input type="text" class="form-control" name="bookID" placeholder="Enter Book ID" required>
+        </div>
+
+        <div class="form-group">
+            <label>ISBN</label>
+            <input type="number" class="form-control" name="ISBN" placeholder="Enter ISBN" required>
+        </div>
+
+        <div class="form-group">
+            <label>ISBN13</label>
+            <input type="number" class="form-control" name="ISBN13" placeholder="Enter ISBN13" required>
+        </div>
+
+        <div class="form-group">
+            <label>Number of Pages</label>
+            <input type="number" class="form-control" name="num_page" placeholder="Enter Number of Pages" required>
+        </div>
+
+        <div class="form-group">
+            <label>Ratings</label>
+            <input type="number" class="form-control" name="ratings" placeholder="Enter Ratings" required>
+        </div>
+
+        <div class="form-group">
+            <label>Publication Date</label>
+            <input type="date" class="form-control" name="Publication_date" placeholder="Enter Publication Date" required>
+        </div>
+
+        <div class="form-group">
+            <label>Publisher</label>
+            <input type="text" class="form-control" name="publisher" placeholder="Enter Publisher" required>
+        </div>
+
+        <div class="form-group">
+            <label>Language</label>
+            <input type="text" class="form-control" name="language" placeholder="Enter Language" required>
+        </div>
+
+        <div class="form-group">
+            <label>Author</label>
+            <input type="text" class="form-control" name="author" placeholder="Enter Author" required>
+        </div>
+
+        <button type="submit" class="btn btn-outline-primary">Add Book</button>
+    </form>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+    {% if alert %}
+    alert("Book is added successfully.")
+    document.location = "/view_books"
+    {% endif %}
+</script>
+{% endblock %}
